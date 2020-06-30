@@ -4,9 +4,15 @@ body {
     font-family: 'Heebo', sans-serif;
 }
 
+body {
+    overflow-x: hidden;
+}
+
+
 #header-img {
     width: 80%;
 }
+
 
 header {
     margin-top: 100px;
@@ -46,6 +52,13 @@ footer {
         width: 100%;
     }
   }
+
+  @media screen and (min-width: 375px) and (max-width: 540px) {
+    .titles {
+        font-size: 45px;
+    }
+ 
+   }
 
   @media screen and (min-width: 992px) and (max-width: 1199px) {
    .titles {

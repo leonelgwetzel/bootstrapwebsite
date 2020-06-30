@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <!-- Other CSS -->  
     <link rel="stylesheet" href="./css/estilos.css">
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   </head>
   <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" data-aos="fade-down" data-aos-duration="1000">
       <div class="container">
         <a class="navbar-brand" href="#">IPhone 11 Website</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,7 +36,7 @@
     </nav>
 
     <!-- Header -->
-    <header id="header">
+    <header id="header" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
       <div class="container mt-5">
         <div class="row">
           <div class="col-md-6">
@@ -57,16 +57,18 @@
     </header>
 
     <!--Testimonial-->
-    <section id="testimonial">
+    <div id="info-one" class="mt-4"></div>
+    <section id="testimonial" data-aos="flip-left" data-aos-easing="linear" data-aos-duration="1500" >
       <div class="container">
         <p class="mb-3 h4">
           "Ejecutivos de Apple, en Cupertino, probablemente están suspirando aliviados. Analistas dicen que la demanda de preventa del iPhone11 es más fuerte que las ventas del año pasado. Apple y varios minoristas comenzaron a aceptar pedidos anticipados desde la semana pasada."</p>
         <p class="h5">- Ana María Luengo-Romero</p>
       </div>
     </section>
+    
 
     <!--Info. 1-->
-    <section id="info-one">
+    <section data-aos="zoom-out" data-aos-easing="linear" data-aos-duration="1500">
       <div class="container">
         <div class="row mt-5">
           <div class="col-md-6">
@@ -112,9 +114,9 @@
 
     <!-- Contact -->
 
-    <footer id="contact">
+    <footer id="contact" class="pt-5">
       <div class="container py-5">
-        <div class="row">
+        <div class="row" data-aos="flip-right" data-aos-easing="linear" data-aos-duration="860">
           <div class="col-md-6">
             <form class="card">
               <div class="card-body">
@@ -140,24 +142,24 @@
         </div>
       </div>
     </footer>
+ 
 
-    <!-- Scroll Reveal -->   
-    <script src="./js/scrollreveal.js"></script>
+    
+    
 
-    <!--Other Js-->
-    <script>
-       window.sr = ScrollReveal();
-       sr.reveal('.nav');
-       sr.reveal("#header");
-       sr.reveal("#info-one");
-       sr.reveal("#contact");
-       </script>
+
 
     <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     
+    <!--Other Js-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
 
   </body>
 </html>
